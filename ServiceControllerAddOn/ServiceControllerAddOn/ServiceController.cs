@@ -30,7 +30,7 @@ namespace ServiceControllerAddOn
         public ExecutionResult Execute(GenericAddonHelper helper)
         {
             ServiceController service = new ServiceController("AlgoAnalyzer");
-            Result = $"We are stopping AlgoAnalyzer and waiting {WaitingTime} - {service.Status}";
+            Result = $"We are stopping {ServiceName} and waiting {WaitingTime} - {service.Status}";
             service.Stop();
             helper.Reporter.Result = $"Attention! {Result}";
 
