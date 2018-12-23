@@ -13,7 +13,7 @@ namespace Runners.Console
             {
                 var action = new StopServiceAction();
                 action.ServiceName = "CloseMe!!";
-                action.WaitingTime = "now";
+                action.WaitingTime = "now!!!!";
 
                 runner.Run(action);
             }
